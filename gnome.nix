@@ -5,11 +5,6 @@ in {
   options.gnome-manager = with types; {
     enable = lib.mkEnableOption "Enable GNOME management";
 
-    user = mkOption {
-      type = str;
-      default = null;
-    };
-
     background = mkOption {
       type = str;
       default = "${./smash_the_state.png}";
