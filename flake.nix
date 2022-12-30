@@ -1,5 +1,7 @@
 {
-  inputs = { home-manager.url = "nixpkgs/nixos-22.11"; };
+  inputs = {
+    home-manager.url = "github:nix-community/home-manager/release-22.11";
+  };
 
   outputs = { home-manager, ... }: {
     nixosModules = rec {
